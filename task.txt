@@ -1,0 +1,10 @@
+Task:
+
+- Clone the pywritesmooth repository.
+- Review the code in the LSTMTrainer.py file.
+- Update the LSTMTrainer class to include a new method for data preprocessing.
+- Test the updated code to ensure it functions correctly.
+- Commit and push the changes to the repository.
+- Provide a summary of the changes made.
+
+Deadline: March 25, 2022
