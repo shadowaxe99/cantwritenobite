@@ -1,34 +1,34 @@
-# Mario
+# Handwriting Synthesis Program
 
-This repository contains a Python program for a Mario game. The game is built using the Pygame library and allows players to control Mario as he navigates through various levels, collects coins, and defeats enemies.
+This repository contains a handwriting synthesis program that generates different versions of handwriting styles using existing SVGs. The program takes thousands of letters (uppercase, lowercase, numbers, symbols) in SVG format as input and produces handwriting samples with distinguishable differences.
 
-## Installation
+## Repository Structure
 
-To run the Mario game, follow these steps:
+- `main.py`: The main script to run the handwriting synthesis program.
+- `pywritesmooth/`: Directory containing the key components of the program.
 
-1. Clone this repository to your local machine.
-2. Install the Pygame library by running `pip install pygame`.
-3. Navigate to the cloned repository directory.
-4. Run the command `python main.py` to start the game.
+## Key Components
 
-## Gameplay
+### LSTM Handwriting Model Training
 
-- Use the arrow keys to move Mario left, right, and jump.
-- Collect coins to earn points.
-- Avoid enemies such as Goombas and Koopas.
-- Reach the flagpole at the end of each level to complete it.
+- **Class**: `LSTMTrainer`
+- **Description**: Main driver to train an LSTM handwriting model.
+- **Dependencies**: `HandwritingSynthesisModel`, `LSTMDataInterface`
 
-## Features
+### Stroke Path Generation
 
-- Multiple levels with increasing difficulty.
-- Power-ups such as mushrooms and fire flowers.
-- Sound effects and background music.
-- High score tracking.
+- **Method**: `get_stroke_path`
+- **Description**: Generates the path of a stroke sample in SVG format.
+- **Parameters**: `data`, `factor`, `offset_x`, `offset_y`
 
-## Contributing
+### Saving Generated Strokes
 
-Contributions to the Mario game are welcome! If you have any ideas for improvements or new features, feel free to submit a pull request.
+- **Methods**: `save_generated_stroke`, `save_generated_stroke_biases`
+- **Description**: Draws handwriting samples and saves them as SVG files.
+- **Parameters**: `data`, `factor`, `show_save_loc`, `biases`
 
-## License
+### One-Hot Encoding
 
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
+- **Method**: `one_hot`
+- **Description**: Transforms a string sequence into a one-hot matrix.
+- **Parameters**: `s` (string sequence)
