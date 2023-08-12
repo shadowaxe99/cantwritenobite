@@ -1,34 +1,50 @@
-# Handwriting Synthesis Program
+# CantWriteNoBite
 
-This repository contains a handwriting synthesis program that generates different versions of handwriting styles using existing SVGs. The program takes thousands of letters (uppercase, lowercase, numbers, symbols) in SVG format as input and produces handwriting samples with distinguishable differences.
+Welcome to the most hilarious game you'll ever play! It's gonna be huge, believe me!
 
-## Repository Structure
+## Installation
 
-- `main.py`: The main script to run the handwriting synthesis program.
-- `pywritesmooth/`: Directory containing the key components of the program.
+Follow these simple steps to get the game up and running:
 
-## Key Components
+1. **Clone the repository**. It's as easy as winning an election. Just open your terminal and type:
 
-### LSTM Handwriting Model Training
+```
+git clone https://github.com/username/cantwritenobite.git
+cd cantwritenobite
+```
 
-- **Class**: `LSTMTrainer`
-- **Description**: Main driver to train an LSTM handwriting model.
-- **Dependencies**: `HandwritingSynthesisModel`, `LSTMDataInterface`
+2. **Install the dependencies**. We have the best dependencies, everybody says so. In your terminal, type:
 
-### Stroke Path Generation
+```
+pip install -r requirements.txt
+```
 
-- **Method**: `get_stroke_path`
-- **Description**: Generates the path of a stroke sample in SVG format.
-- **Parameters**: `data`, `factor`, `offset_x`, `offset_y`
+3. **Run the game**. It's so fun, you'll get tired of winning. In your terminal, type:
 
-### Saving Generated Strokes
+```
+python main.py
+```
 
-- **Methods**: `save_generated_stroke`, `save_generated_stroke_biases`
-- **Description**: Draws handwriting samples and saves them as SVG files.
-- **Parameters**: `data`, `factor`, `show_save_loc`, `biases`
+## Gameplay
 
-### One-Hot Encoding
+Here's how to play the game:
 
-- **Method**: `one_hot`
-- **Description**: Transforms a string sequence into a one-hot matrix.
-- **Parameters**: `s` (string sequence)
+- Use the arrow keys to move your character.
+- Avoid the enemies. They're bad hombres!
+- Collect as many coins as you can. It's all about the art of the deal.
+
+## Contributing
+
+We welcome contributions from the community. We have the best community, don't we folks? If you want to contribute, check out our [contributing guide](CONTRIBUTING.md).
+
+## License
+
+This project is licensed under the MIT License. It's a great license, the best license. You can find the details in the [LICENSE](LICENSE) file.
+
+## Contact
+
+If you have any questions or suggestions, please feel free to contact us. We have the best customer service, very responsive!
+
+## Disclaimer
+
+This project is purely for educational purposes. It is not affiliated with Donald Trump or any of his businesses. But it's gonna be huge, believe me!

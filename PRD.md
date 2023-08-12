@@ -1,66 +1,33 @@
-# Product Requirement Document (PRD) for Handwriting Synthesis Program
+# Product Requirements Document
 
-## Overview:
+## Purpose
 
-The goal is to create a handwriting synthesis program that can take thousands of letters (uppercase, lowercase, numbers, symbols) all in SVG format and create different versions of handwriting that vary in style. The program will utilize existing SVGs to generate unique and distinguishable handwriting styles.
+The purpose of this document is to outline the product requirements for the CantWriteNoBite game. This includes the functionality of the game, the user interface design, and the user experience.
 
-## Repository:
+## Functionality
 
-pywritesmooth
+The game should have the following functionality:
 
-## Key Components:
+- The player should be able to move their character using the arrow keys.
+- The player should be able to collect coins by moving their character over them.
+- The player should lose the game if they come into contact with an enemy.
 
-### LSTM Handwriting Model Training:
+## User Interface Design
 
-**Class:** LSTMTrainer
+The user interface should be simple and intuitive. It should include the following elements:
 
-**Description:** Main driver to train an LSTM handwriting model.
+- A game area where the player can see their character, the coins, and the enemies.
+- A score display showing the number of coins collected.
+- A game over screen showing the player's final score and offering the option to play again.
 
-**Dependencies:** HandwritingSynthesisModel, LSTMDataInterface
+## User Experience
 
-[Code Link](https://github.com/shadowaxe99/pywritesmooth/blob/main/LSTMTrainer.py)
+The game should be fun and engaging. The difficulty should increase gradually as the player collects more coins, keeping the game challenging and interesting.
 
-### Stroke Path Generation:
+## Contact
 
-**Method:** get_stroke_path
+If you have any questions or suggestions, please feel free to contact us.
 
-**Description:** Generates the path of a stroke sample in SVG format.
+## Disclaimer
 
-**Parameters:** data, factor, offset_x, offset_y
-
-[Code Link](https://github.com/shadowaxe99/pywritesmooth/blob/main/stroke_path_generator.py)
-
-### Saving Generated Strokes:
-
-**Methods:** save_generated_stroke, save_generated_stroke_biases
-
-**Description:** Draws handwriting samples and saves them as SVG files.
-
-**Parameters:** data, factor, show_save_loc, biases
-
-[Code Link](https://github.com/shadowaxe99/pywritesmooth/blob/main/stroke_saver.py)
-
-### One-Hot Encoding:
-
-**Method:** one_hot
-
-**Description:** Transforms a string sequence into a one-hot matrix.
-
-**Parameters:** s (string sequence)
-
-[Code Link](https://github.com/shadowaxe99/pywritesmooth/blob/main/one_hot_encoding.py)
-
-## Requirements:
-
-- Input: Thousands of SVGs representing different variations of characters.
-- Output: At least 10+ different handwriting styles with distinguishable differences.
-- Automation: Replace the manual handwriting process with an automated solution.
-
-## Potential Enhancements:
-
-- Cursive Writing: Explore ways to generate cursive style writing.
-- Style Customization: Provide options to customize the generated handwriting styles.
-
-## Conclusion:
-
-The pywritesmooth repository provides a foundational framework for the handwriting synthesis program. It will require further development and customization to fully meet the project's specific requirements and objectives.
+This project is purely for educational purposes. It is not affiliated with Donald Trump or any of his businesses.
