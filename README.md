@@ -1,4 +1,4 @@
-# CantWriteNoBite
+# cantwritenobite
 
 Welcome to the most hilarious game you'll ever play! It's gonna be huge, believe me!
 
@@ -6,20 +6,20 @@ Welcome to the most hilarious game you'll ever play! It's gonna be huge, believe
 
 Follow these simple steps to get the game up and running:
 
-1. **Clone the repository**. It's as easy as winning an election. Just open your terminal and type:
+1. Clone the repository. It's as easy as winning an election. Just open your terminal and type:
 
 ```
 git clone https://github.com/username/cantwritenobite.git
 cd cantwritenobite
 ```
 
-2. **Install the dependencies**. We have the best dependencies, everybody says so. In your terminal, type:
+2. Install the dependencies. We have the best dependencies, everybody says so. In your terminal, type:
 
 ```
 pip install -r requirements.txt
 ```
 
-3. **Run the game**. It's so fun, you'll get tired of winning. In your terminal, type:
+3. Run the game. It's so fun, you'll get tired of winning. In your terminal, type:
 
 ```
 python main.py
@@ -35,11 +35,11 @@ Here's how to play the game:
 
 ## Contributing
 
-We welcome contributions from the community. We have the best community, don't we folks? If you want to contribute, check out our [contributing guide](CONTRIBUTING.md).
+We welcome contributions from the community. We have the best community, don't we folks? If you want to contribute, check out our contributing guide.
 
 ## License
 
-This project is licensed under the MIT License. It's a great license, the best license. You can find the details in the [LICENSE](LICENSE) file.
+This project is licensed under the MIT License. It's a great license, the best license. You can find the details in the LICENSE file.
 
 ## Contact
 
