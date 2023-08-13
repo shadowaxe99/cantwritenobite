@@ -22,7 +22,7 @@ pip install -r requirements.txt
 3. Run the game. It's so fun, you'll get tired of winning. In your terminal, type:
 
 ```
-python main.py
+python src/main.py
 ```
 
 ## Gameplay
